@@ -24,38 +24,56 @@
                                     <constraint firstAttribute="height" constant="195" id="QzP-b4-Q4C"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="17i-a2-SXB">
-                                <rect key="frame" x="174" y="258" width="253" height="35"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Emal" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="17i-a2-SXB" customClass="CustomTextField" customModule="BrainTease" customModuleProvider="target">
+                                <rect key="frame" x="174" y="258" width="253" height="40"/>
+                                <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="253" id="5dV-6W-dhi"/>
-                                    <constraint firstAttribute="height" constant="35" id="n3E-Bx-V3J"/>
+                                    <constraint firstAttribute="height" constant="40" id="n3E-Bx-V3J"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="inset">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nce-wR-9je">
-                                <rect key="frame" x="174" y="328" width="253" height="35"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nce-wR-9je" customClass="CustomTextField" customModule="BrainTease" customModuleProvider="target">
+                                <rect key="frame" x="174" y="323" width="253" height="40"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="c8l-jq-6Gt"/>
+                                    <constraint firstAttribute="height" constant="40" id="c8l-jq-6Gt"/>
                                     <constraint firstAttribute="width" constant="253" id="kRg-jb-0wv"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="inset">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZU-JI-rPj">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZU-JI-rPj" customClass="CustomButton" customModule="BrainTease" customModuleProvider="target">
                                 <rect key="frame" x="217" y="398" width="167" height="42"/>
+                                <color key="backgroundColor" red="0.066666666669999999" green="0.57254901960000004" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="7SL-zs-Ykr"/>
                                     <constraint firstAttribute="width" constant="167" id="84d-M5-3Dp"/>
                                 </constraints>
                                 <state key="normal" title="Login"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fontColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="AZU-JI-rPj" firstAttribute="centerX" secondItem="nce-wR-9je" secondAttribute="centerX" id="7di-bl-snq"/>
                             <constraint firstItem="6nR-hd-cb8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="S6B-Rq-ybk"/>
-                            <constraint firstItem="nce-wR-9je" firstAttribute="top" secondItem="17i-a2-SXB" secondAttribute="bottom" constant="35" id="ThU-kD-gwk"/>
+                            <constraint firstItem="nce-wR-9je" firstAttribute="top" secondItem="17i-a2-SXB" secondAttribute="bottom" constant="25" id="ThU-kD-gwk"/>
                             <constraint firstItem="AZU-JI-rPj" firstAttribute="top" secondItem="nce-wR-9je" secondAttribute="bottom" constant="35" id="Thf-oN-RY4"/>
                             <constraint firstItem="nce-wR-9je" firstAttribute="centerX" secondItem="17i-a2-SXB" secondAttribute="centerX" id="iI5-nG-0Q9"/>
                             <constraint firstItem="6nR-hd-cb8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lx5-nY-ekO"/>
