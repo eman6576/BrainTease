@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		884D83FD1CE905B2006BFD8F /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884D83FC1CE905B2006BFD8F /* CustomTextField.swift */; };
 		884D83FF1CE90807006BFD8F /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884D83FE1CE90807006BFD8F /* CustomButton.swift */; };
+		884D84021CE9133A006BFD8F /* AnimationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884D84011CE9133A006BFD8F /* AnimationEngine.swift */; };
 		88BF11861CE7FDBA009D702F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BF11851CE7FDBA009D702F /* AppDelegate.swift */; };
 		88BF11881CE7FDBA009D702F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BF11871CE7FDBA009D702F /* LoginViewController.swift */; };
 		88BF118B1CE7FDBA009D702F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88BF11891CE7FDBA009D702F /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		6B6487EC23933103822D88CD /* Pods-BrainTease.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrainTease.release.xcconfig"; path = "Pods/Target Support Files/Pods-BrainTease/Pods-BrainTease.release.xcconfig"; sourceTree = "<group>"; };
 		884D83FC1CE905B2006BFD8F /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		884D83FE1CE90807006BFD8F /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		884D84011CE9133A006BFD8F /* AnimationEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationEngine.swift; sourceTree = "<group>"; };
 		88BF11821CE7FDBA009D702F /* BrainTease.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrainTease.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88BF11851CE7FDBA009D702F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88BF11871CE7FDBA009D702F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +56,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		884D84001CE91312006BFD8F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				884D84011CE9133A006BFD8F /* AnimationEngine.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 		88BF11791CE7FDBA009D702F = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +90,7 @@
 				88BF11971CE7FDCC009D702F /* Controller */,
 				88BF119A1CE7FDE8009D702F /* Storyboards */,
 				88BF119C1CE7FE0C009D702F /* Resources */,
+				884D84001CE91312006BFD8F /* Utilities */,
 				88BF11851CE7FDBA009D702F /* AppDelegate.swift */,
 				88BF118C1CE7FDBA009D702F /* Assets.xcassets */,
 				88BF11911CE7FDBA009D702F /* Info.plist */,
@@ -262,6 +273,7 @@
 				884D83FF1CE90807006BFD8F /* CustomButton.swift in Sources */,
 				88BF11881CE7FDBA009D702F /* LoginViewController.swift in Sources */,
 				88BF11861CE7FDBA009D702F /* AppDelegate.swift in Sources */,
+				884D84021CE9133A006BFD8F /* AnimationEngine.swift in Sources */,
 				884D83FD1CE905B2006BFD8F /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

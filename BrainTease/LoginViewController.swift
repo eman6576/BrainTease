@@ -9,17 +9,19 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    @IBOutlet weak var emailCenterConstraint: NSLayoutConstraint!
+    @IBOutlet weak var passwordCenterConstraint: NSLayoutConstraint!
+    @IBOutlet weak var loginButtonCenterConstraint: NSLayoutConstraint!
+    
+    var animationEngine: AnimationEngine!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.animationEngine = AnimationEngine(constraints: [emailCenterConstraint, passwordCenterConstraint, loginButtonCenterConstraint])
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewDidAppear(animated: Bool) {
+        self.animationEngine.animateOnScreen(1)
     }
-
-
 }
 
