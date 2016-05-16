@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Login View Controller-->
@@ -67,6 +68,9 @@
                                         <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="IVy-8I-8Gy" kind="show" id="ivf-de-TCJ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -90,6 +94,87 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="333" y="346"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="T39-Sa-Njc">
+            <objects>
+                <viewController id="IVy-8I-8Gy" customClass="GameViewController" customModule="BrainTease" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LG4-T2-3cJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="XFe-0P-HEo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="42V-Ze-1cY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKE-Uu-r95" customClass="CustomButton" customModule="BrainTease" customModuleProvider="target">
+                                <rect key="frame" x="199" y="506" width="105" height="42"/>
+                                <color key="backgroundColor" red="0.066666666669999999" green="0.57254901960000004" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="G1a-UH-vJv"/>
+                                    <constraint firstAttribute="width" constant="167" id="Neg-F2-rxQ"/>
+                                    <constraint firstAttribute="width" constant="105" id="cHr-wC-ctO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="START"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fontColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Neg-F2-rxQ"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6W-Fl-avq" customClass="CustomButton" customModule="BrainTease" customModuleProvider="target">
+                                <rect key="frame" x="16" y="506" width="105" height="42"/>
+                                <color key="backgroundColor" red="0.066666666669999999" green="0.57254901960000004" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="05S-AI-DLW"/>
+                                    <constraint firstAttribute="width" constant="167" id="Jpf-ex-k3d"/>
+                                    <constraint firstAttribute="height" constant="42" id="wtv-Ld-s5k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="NO"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fontColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Jpf-ex-k3d"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember this image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7f-dl-4jA">
+                                <rect key="frame" x="16" y="65" width="288" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="vbg-td-e0b"/>
+                                    <constraint firstAttribute="height" constant="24" id="x2u-Pk-gse"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="H6W-Fl-avq" firstAttribute="leading" secondItem="42V-Ze-1cY" secondAttribute="leadingMargin" id="13l-gw-J9E"/>
+                            <constraint firstItem="UKE-Uu-r95" firstAttribute="trailing" secondItem="42V-Ze-1cY" secondAttribute="trailingMargin" id="8ig-GJ-nlg"/>
+                            <constraint firstItem="Y7f-dl-4jA" firstAttribute="centerX" secondItem="42V-Ze-1cY" secondAttribute="centerX" id="BzT-zi-G1g"/>
+                            <constraint firstItem="XFe-0P-HEo" firstAttribute="top" secondItem="UKE-Uu-r95" secondAttribute="bottom" constant="20" id="Vv1-PA-bO8"/>
+                            <constraint firstItem="XFe-0P-HEo" firstAttribute="top" secondItem="H6W-Fl-avq" secondAttribute="bottom" constant="20" id="ft8-fN-WJI"/>
+                            <constraint firstItem="Y7f-dl-4jA" firstAttribute="top" secondItem="LG4-T2-3cJ" secondAttribute="bottom" constant="45" id="yUJ-wt-Zqc"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="33I-hH-0cv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1004" y="346"/>
         </scene>
     </scenes>
     <resources>
