@@ -127,6 +127,9 @@
                                         <exclude reference="Neg-F2-rxQ"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="yesButtonTapped:" destination="IVy-8I-8Gy" eventType="touchUpInside" id="odl-Hi-i3o"/>
+                                </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6W-Fl-avq" customClass="CustomButton" customModule="BrainTease" customModuleProvider="target">
                                 <rect key="frame" x="16" y="506" width="105" height="42"/>
@@ -148,9 +151,12 @@
                                         <exclude reference="Jpf-ex-k3d"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="noButtonTapped:" destination="IVy-8I-8Gy" eventType="touchUpInside" id="VgQ-4k-zle"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember this image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7f-dl-4jA">
-                                <rect key="frame" x="16" y="65" width="288" height="24"/>
+                                <rect key="frame" x="16" y="90" width="288" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="vbg-td-e0b"/>
                                     <constraint firstAttribute="height" constant="24" id="x2u-Pk-gse"/>
@@ -167,10 +173,15 @@
                             <constraint firstItem="Y7f-dl-4jA" firstAttribute="centerX" secondItem="42V-Ze-1cY" secondAttribute="centerX" id="BzT-zi-G1g"/>
                             <constraint firstItem="XFe-0P-HEo" firstAttribute="top" secondItem="UKE-Uu-r95" secondAttribute="bottom" constant="20" id="Vv1-PA-bO8"/>
                             <constraint firstItem="XFe-0P-HEo" firstAttribute="top" secondItem="H6W-Fl-avq" secondAttribute="bottom" constant="20" id="ft8-fN-WJI"/>
-                            <constraint firstItem="Y7f-dl-4jA" firstAttribute="top" secondItem="LG4-T2-3cJ" secondAttribute="bottom" constant="45" id="yUJ-wt-Zqc"/>
+                            <constraint firstItem="Y7f-dl-4jA" firstAttribute="top" secondItem="LG4-T2-3cJ" secondAttribute="bottom" constant="70" id="yUJ-wt-Zqc"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="noButton" destination="H6W-Fl-avq" id="KaH-lN-3N5"/>
+                        <outlet property="titleLabel" destination="Y7f-dl-4jA" id="suZ-mO-WS8"/>
+                        <outlet property="yesButton" destination="UKE-Uu-r95" id="9Tj-gu-zt2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="33I-hH-0cv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

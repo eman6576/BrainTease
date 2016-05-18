@@ -31,6 +31,7 @@ class CardView: UIView {
     }
     
     func setUpView() {
+        self.layer.cornerRadius = cornerRadius
         self.layer.shadowOpacity = 0.8
         self.layer.shadowRadius = 5.0
         self.layer.shadowOffset = CGSizeMake(0.0, 2.0)

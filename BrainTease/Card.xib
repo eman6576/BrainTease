@@ -25,6 +25,11 @@
                 <constraint firstItem="1Ni-Z1-HoU" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lMV-f4-hql"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="3"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="shapeImageView" destination="1Ni-Z1-HoU" id="CZw-U0-90b"/>
             </connections>

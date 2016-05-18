@@ -14,7 +14,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var loginButtonCenterConstraint: NSLayoutConstraint!
     
     var animationEngine: AnimationEngine!
-
+    
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.animationEngine = AnimationEngine(constraints: [emailCenterConstraint, passwordCenterConstraint, loginButtonCenterConstraint])
