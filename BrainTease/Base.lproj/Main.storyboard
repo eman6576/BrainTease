@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -165,13 +165,25 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIT-QY-KyC">
+                                <rect key="frame" x="266" y="28" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="6iw-4V-b3i"/>
+                                    <constraint firstAttribute="width" constant="42" id="NEX-YQ-zzR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="H6W-Fl-avq" firstAttribute="leading" secondItem="42V-Ze-1cY" secondAttribute="leadingMargin" id="13l-gw-J9E"/>
                             <constraint firstItem="UKE-Uu-r95" firstAttribute="trailing" secondItem="42V-Ze-1cY" secondAttribute="trailingMargin" id="8ig-GJ-nlg"/>
                             <constraint firstItem="Y7f-dl-4jA" firstAttribute="centerX" secondItem="42V-Ze-1cY" secondAttribute="centerX" id="BzT-zi-G1g"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dIT-QY-KyC" secondAttribute="trailing" constant="-4" id="O2c-3f-A5x"/>
                             <constraint firstItem="XFe-0P-HEo" firstAttribute="top" secondItem="UKE-Uu-r95" secondAttribute="bottom" constant="20" id="Vv1-PA-bO8"/>
+                            <constraint firstItem="dIT-QY-KyC" firstAttribute="top" secondItem="LG4-T2-3cJ" secondAttribute="bottom" constant="8" id="Z9F-h2-KIx"/>
                             <constraint firstItem="XFe-0P-HEo" firstAttribute="top" secondItem="H6W-Fl-avq" secondAttribute="bottom" constant="20" id="ft8-fN-WJI"/>
                             <constraint firstItem="Y7f-dl-4jA" firstAttribute="top" secondItem="LG4-T2-3cJ" secondAttribute="bottom" constant="70" id="yUJ-wt-Zqc"/>
                         </constraints>
@@ -179,6 +191,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="noButton" destination="H6W-Fl-avq" id="KaH-lN-3N5"/>
+                        <outlet property="timerLabel" destination="dIT-QY-KyC" id="9Nd-9n-fWk"/>
                         <outlet property="titleLabel" destination="Y7f-dl-4jA" id="suZ-mO-WS8"/>
                         <outlet property="yesButton" destination="UKE-Uu-r95" id="9Tj-gu-zt2"/>
                     </connections>
